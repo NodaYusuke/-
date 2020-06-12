@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C30756D0-4CA5-4C98-8498-6890779AEE6E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>自作ゲーム</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Lib\Microsoft DirectX SDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Lib\Microsoft DirectX SDK\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\Lib\Microsoft DirectX SDK\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Lib\Microsoft DirectX SDK\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SRC\Anime\anime.cpp" />
+    <ClCompile Include="SRC\Camera\camera.cpp" />
+    <ClCompile Include="SRC\Chara\chara.cpp" />
+    <ClCompile Include="SRC\Chara\Enemy\enemy.cpp" />
+    <ClCompile Include="SRC\Chara\Player\player.cpp" />
+    <ClCompile Include="SRC\main.cpp" />
+    <ClCompile Include="SRC\MeshLei\meshLei.cpp" />
+    <ClCompile Include="SRC\Mouse\mouse.cpp" />
+    <ClCompile Include="SRC\Scene\GameScene\gameScene.cpp" />
+    <ClCompile Include="SRC\Scene\LoseResultScene\LoseResult.cpp" />
+    <ClCompile Include="SRC\Scene\SceneBace\sceneBase.cpp" />
+    <ClCompile Include="SRC\Scene\SceneManeger\sceneManeger.cpp" />
+    <ClCompile Include="SRC\Scene\StageSelectScene\stageSelectScene.cpp" />
+    <ClCompile Include="SRC\Scene\TitleScene\titleScene.cpp" />
+    <ClCompile Include="SRC\Scene\WinResultScene\WinResultScene.cpp" />
+    <ClCompile Include="SRC\Sound\BGM\BGM_Game\BGM_game.cpp" />
+    <ClCompile Include="SRC\Sound\BGM\BGM_LoseRsult\BGM_loseResult.cpp" />
+    <ClCompile Include="SRC\Sound\BGM\BGM_StageSelect\BGM_stageSelect.cpp" />
+    <ClCompile Include="SRC\Sound\BGM\BGM_Title\BGM_title.cpp" />
+    <ClCompile Include="SRC\Sound\BGM\BGM_WinResult\BGM_winResult.cpp" />
+    <ClCompile Include="SRC\Sound\SE\SE_HitNormalAttack\SE_hitNormalAttack.cpp" />
+    <ClCompile Include="SRC\Sound\SE\SE_HitTopAttack\SE_hitTopAttack.cpp" />
+    <ClCompile Include="SRC\Sound\SE\SE_HitUnderAttack\SE_hitUnderAttack.cpp" />
+    <ClCompile Include="SRC\Sound\SE\SE_NormalAttack\SE_normalAttack.cpp" />
+    <ClCompile Include="SRC\Sound\SE\SE_PreventsAttacks\SE_preventsAttacks.cpp" />
+    <ClCompile Include="SRC\Sound\SE\SE_TopAttack\SE_topAttack.cpp" />
+    <ClCompile Include="SRC\Sound\SE\SE_UnderAttack\SE_underAttack.cpp" />
+    <ClCompile Include="SRC\Sound\SoundBase\soundBase.cpp" />
+    <ClCompile Include="SRC\Stage\stage.cpp" />
+    <ClCompile Include="SRC\State\EnemyState\Attack\E_Attack.cpp" />
+    <ClCompile Include="SRC\State\EnemyState\EnemyStateManeger\enemyStateManeger.cpp" />
+    <ClCompile Include="SRC\State\EnemyState\Move\E_Move.cpp" />
+    <ClCompile Include="SRC\State\EnemyState\Stay\E_Stay.cpp" />
+    <ClCompile Include="SRC\State\Fall\fall.cpp" />
+    <ClCompile Include="SRC\State\PlayerState\Attack\attack.cpp" />
+    <ClCompile Include="SRC\State\PlayerState\Guard\TopGuard\topGuard.cpp" />
+    <ClCompile Include="SRC\State\PlayerState\Move\move.cpp" />
+    <ClCompile Include="SRC\State\PlayerState\Stay\stay.cpp" />
+    <ClCompile Include="SRC\State\PlayerState\Step\step.cpp" />
+    <ClCompile Include="SRC\State\state.cpp" />
+    <ClCompile Include="SRC\Wavread\wavread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SRC\Anime\anime.h" />
+    <ClInclude Include="SRC\Camera\camera.h" />
+    <ClInclude Include="SRC\Chara\chara.h" />
+    <ClInclude Include="SRC\Chara\Enemy\enemy.h" />
+    <ClInclude Include="SRC\Chara\Player\player.h" />
+    <ClInclude Include="SRC\extern.h" />
+    <ClInclude Include="SRC\function.h" />
+    <ClInclude Include="SRC\include.h" />
+    <ClInclude Include="SRC\MeshLei\meshLei.h" />
+    <ClInclude Include="SRC\Mouse\mouse.h" />
+    <ClInclude Include="SRC\numDecision.h" />
+    <ClInclude Include="SRC\Scene\GameScene\gameScene.h" />
+    <ClInclude Include="SRC\Scene\LoseResultScene\LoseResult.h" />
+    <ClInclude Include="SRC\Scene\SceneBace\sceneBase.h" />
+    <ClInclude Include="SRC\Scene\SceneManeger\sceneManeger.h" />
+    <ClInclude Include="SRC\Scene\StageSelectScene\stageSelectScene.h" />
+    <ClInclude Include="SRC\Scene\TitleScene\titleScene.h" />
+    <ClInclude Include="SRC\Scene\WinResultScene\WinResultScene.h" />
+    <ClInclude Include="SRC\Sound\BGM\BGM_Game\BGM_game.h" />
+    <ClInclude Include="SRC\Sound\BGM\BGM_LoseRsult\BGM_loseResult.h" />
+    <ClInclude Include="SRC\Sound\BGM\BGM_StageSelect\BGM_stageSelect.h" />
+    <ClInclude Include="SRC\Sound\BGM\BGM_Title\BGM_title.h" />
+    <ClInclude Include="SRC\Sound\BGM\BGM_WinResult\BGM_winResult.h" />
+    <ClInclude Include="SRC\Sound\SE\SE_HitNormalAttack\SE_hitNormalAttack.h" />
+    <ClInclude Include="SRC\Sound\SE\SE_HitTopAttack\SE_hitTopAttack.h" />
+    <ClInclude Include="SRC\Sound\SE\SE_HitUnderAttack\SE_hitUnderAttack.h" />
+    <ClInclude Include="SRC\Sound\SE\SE_NormalAttack\SE_normalAttack.h" />
+    <ClInclude Include="SRC\Sound\SE\SE_PreventsAttacks\SE_preventsAttacks.h" />
+    <ClInclude Include="SRC\Sound\SE\SE_TopAttack\SE_topAttack.h" />
+    <ClInclude Include="SRC\Sound\SE\SE_UnderAttack\SE_underAttack.h" />
+    <ClInclude Include="SRC\Sound\SoundBase\soundBase.h" />
+    <ClInclude Include="SRC\Stage\stage.h" />
+    <ClInclude Include="SRC\State\EnemyState\Attack\E_Attack.h" />
+    <ClInclude Include="SRC\State\EnemyState\EnemyStateManeger\enemyStateManeger.h" />
+    <ClInclude Include="SRC\State\EnemyState\Move\E_Move.h" />
+    <ClInclude Include="SRC\State\EnemyState\Stay\E_Stay.h" />
+    <ClInclude Include="SRC\State\Fall\fall.h" />
+    <ClInclude Include="SRC\State\PlayerState\Attack\attack.h" />
+    <ClInclude Include="SRC\State\PlayerState\Guard\TopGuard\topGuard.h" />
+    <ClInclude Include="SRC\State\PlayerState\Move\move.h" />
+    <ClInclude Include="SRC\State\PlayerState\Stay\stay.h" />
+    <ClInclude Include="SRC\State\PlayerState\Step\step.h" />
+    <ClInclude Include="SRC\State\state.h" />
+    <ClInclude Include="SRC\struct.h" />
+    <ClInclude Include="SRC\Wavread\wavread.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
